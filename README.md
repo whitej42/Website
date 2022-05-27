@@ -1,4 +1,4 @@
-# Portfolio Website
+# Personal Website
 
 Personal website I am developing - Expecting to release soon.
 
