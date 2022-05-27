@@ -6,12 +6,11 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/index.css">
 
     <title>James White | Cloud Specialist</title>
 
@@ -21,7 +20,6 @@
 
     <main>
         <section id="home" data-label="Home">
-
             <div class="section-text">
                 <div class="grid-container">
                     <div class="grid-item-left">
@@ -32,6 +30,7 @@
                             <li><a class="nav-item" href="#about">About</a></li>
                             <li><a class="nav-item" href="#work">Work</a></li>
                             <li><a class="nav-item" href="#skills">Skills</a></li>
+                            <li><a class="nav-item" href="#certs">Certs</a></li>
                             <li><a class="nav-item" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -169,7 +168,35 @@
             <div class="section-text">
                 <div class="grid-container">
                     <div class="grid-item-left">
-                        some text here
+                        <div class="skills-container">
+                            <div class="skill-bar">
+                                <div class="skills cisco"><label class="skill">Cisco</label>80%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills aws"><label class="skill">AWS</label>80%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills terraform"><label class="skill">Terraform</label>75%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills django"><label class="skill">Django</label>60%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills python"><label class="skill">Python</label>60%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills html"><label class="skill">HTML</label>50%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills css"><label class="skill">CSS</label>40%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills react"><label class="skill">React</label>20%</div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skills js"><label class="skill">JS</label>10%</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="grid-item-right">
                         <label class="section-heading">Skills</label>
@@ -177,6 +204,67 @@
                 </div>
             </div>
             <div class="bottom-text bg-yellow">
+                <span>Certifications
+                    <a class="btn-down" href="#certs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </section>
+
+        <section id="certs" data-label="Certifications">
+            <div class="section-text">
+                <div class="grid-container">
+                    <div class="grid-item-left">
+                        <div class="slideshow">
+                            <div class="slide fade">
+                                <div class="slide-contents">
+                                    <img src="static/img/aws-architect.png">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="slide-contents">
+                                    <img src="static/img/terraform.png">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="slide-contents">
+                                    <img src="static/img/aws-practitioner.png">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="slide-contents">
+                                    <img src="static/img/az-900.png">
+                                </div>
+                            </div>
+                            <div class="slide fade">
+                                <div class="slide-contents">
+                                    <img src="static/img/ccent.png">
+                                </div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                </svg>
+                            </a>
+                            <a class="next" onclick="plusSlides(1)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-item-right">
+                        <label class="section-heading">Certifications</label>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-text bg-white">
                 <span>Contact
                     <a class="btn-down" href="#contact">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -221,7 +309,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom-text bg-white">
+            <div class="bottom-text bg-yellow">
                 <span>Back to Top
                     <a class="btn-down" href="#home">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -236,6 +324,7 @@
     </main>
 
     <script src="static/js/typer.js" type="text/javascript" lang="javascript"></script>
+    <script src="static/js/slideshow.js" type="text/javascript" lang="javascript"></script>
 
 </body>
 

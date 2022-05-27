@@ -1,4 +1,4 @@
-/* Custom Stylesheet */
+/* Index Stylesheet */
 
 /* -- Global -- */
 html, main, body {
@@ -6,25 +6,32 @@ html, main, body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: Arial !important;
-    /* overflow: hidden; */
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Sections */
 section {
     height: 100%;
+    overflow: hidden;
 }
 
-#home, #work, #contact {
+#home, #work, #certs {
     background-color: #f3b70a;
 }
 
-#about, #skills {
+#about, #skills, #contact {
     background-color: #f2f2f2;
 }
 
 .section-text {
-    height: 75%;
-    overflow:hidden;
+    height: 80%;
+    overflow: hidden;
 }
 
 .section-heading {
@@ -54,9 +61,9 @@ section {
 
 /* Bottom Text */
 .bottom-text {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
     text-align: right;
-    padding: 10vh;
+    padding: 8vh 10vh 8vh 0;
     overflow: hidden;
 }
 
@@ -150,7 +157,7 @@ section {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0.35vh;
+    height: 3px;
     background-color: currentColor;
     transform: scaleX(0);
     transform-origin: right;
@@ -207,6 +214,95 @@ td svg {
     color: #4d4d4d;
 }
 
+/* --- Skills Page --- */
+.skills-container {
+    margin-right: 2vh;
+}
+
+.skill-bar {
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+.skills {
+    border-radius: 15px;
+    color: #f2f2f2;
+    padding: 1vh;
+    text-align: right;
+}
+
+.skill {
+    float: left;
+}
+
+.cisco { width: 80%; background-color: #005165; }
+.aws { width: 80%; background-color: #ff9900; }
+.terraform { width: 75%; background-color: #5c41e2; }
+.django { width: 60%; background-color: #11553b; }
+.python { width: 60%; background-color: #f7ca3e; }
+.html { width: 50%; background-color: #dd4b25; }
+.css { width: 40%; background-color: #254bdd; }
+.react { width: 20%; background-color: #5ed3f3; }
+.js { width: 10%; background-color: #e8d44d; }
+
+/* --- Certs Page --- */
+.slideshow {
+    position: relative;
+    margin-right: 8vw;
+}
+
+.slide {
+    display: none;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: center;
+}
+
+.slide img {
+    width: 32vh;
+    height: 32vh;
+}
+
+.fade {
+    animation: fadeIn 1.2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+.slide-contents {
+    padding: 2vh;
+    height: 100%;
+}
+
+.prev, .next {
+    opacity: 0.2;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    transition: 150ms ease-in;
+}
+
+.slideshow svg {
+    width: 5vh;
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+}
+
+.slideshow a:hover {
+    opacity: 0.5;
+}
+
+.next{ 
+    right: 0;
+}
+
 /* -- Contact Page -- */
 #sites a {
     color: black;
@@ -216,7 +312,7 @@ td svg {
 }
 
 #sites a:hover{
-    color: #f2f2f2;
+    color: #f3b70a;
 }
 
 #sites li {

@@ -1,0 +1,40 @@
+/* Error Stylesheet */
+
+/* -- Global -- */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial !important;
+    overflow: hidden;
+    height: 100%;
+    background-color: #f3b70a;
+   
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+p {
+    font-size: 8vh;
+    margin: 2vh;
+}
+
+.text-large {
+    font-size: 14vh;
+    color: #f2f2f2;
+    font-weight: bold;
+}
+
+svg {
+    padding: 0 0.5vw 2vh 0;
+    vertical-align: middle;
+    width: 14vh;
+    height: 14vh;
+}
