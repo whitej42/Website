@@ -6,7 +6,6 @@ html, main, body {
     margin: 0;
     scroll-behavior: smooth;
     font-family: Arial !important;
-    overflow: hidden;
 }
 
 * {
@@ -295,10 +294,6 @@ td svg {
     margin: 0;
 }
 
-.slideshow a:hover {
-    opacity: 0.5;
-}
-
 .next{ 
     right: 0;
 }
@@ -313,6 +308,10 @@ td svg {
     color: #f2f2f2;
     position: relative;
     transition: 250ms ease-in;
+}
+
+.credly a:hover {
+    opacity: 0.5;
 }
 
 .credly a::after {
@@ -356,4 +355,19 @@ td svg {
     vertical-align: middle;
     width: 10vh;
     height: 10vh;
+}
+
+.endorsement {
+    float: left;
+    margin: 1vw;
+    padding-left: 2.8vh;
+    font-size: 2.5vh;
+}
+
+.endorsement svg {
+    padding: 0;
+    margin: 0;
+    width: 3vh;
+    height: 3vh;
+    vertical-align: middle;
 }
