@@ -4,8 +4,6 @@ Personal website I have developed - [jwhite42.com](http://jwhite42.com)
 
 **Warning:** Unfortunatley the site does not work well on mobile devices and am in the process of rectifying that.
 
-Website is currently static to save costs when deploying to AWS but a full backend has been developed using Django.
-
 ## Hosting:
 The site is hosted statically in AWS using Simple Storage Service (S3) and CloudFront.
 
