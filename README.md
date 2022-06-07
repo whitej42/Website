@@ -7,7 +7,9 @@ Personal website I have developed - [jwhite42.com](http://jwhite42.com)
 Website is currently static to save costs when deploying to AWS but a full backend has been developed using Django.
 
 ## Hosting:
-The site is hosted statically in AWS using Simple Storage Service (S3) Static Website Hosting.
+The site is hosted statically in AWS using Simple Storage Service (S3) and CloudFront.
+
+![Architecture Diagram](https://github.com/ClassicSmej/Website/blob/main/Website%20v2/non-site%20files/Architecture%20Diagram.png)
 
 ## Status:
 **Released**
