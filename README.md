@@ -11,9 +11,6 @@ The site is hosted statically in AWS using Simple Storage Service (S3) and Cloud
 
 ![Architecture Diagram](https://github.com/ClassicSmej/Website/blob/main/Website%20v2/non-site%20files/Architecture%20Diagram.png)
 
-## Status:
-**Released**
-
 ## Website V1:
 Developed from scratch in the Django Web Framework with a working backend. This site has been replaced by an improved verision (V2) which focused more on making the site static and involved a complete redesign.
 
