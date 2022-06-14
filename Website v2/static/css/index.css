@@ -218,34 +218,33 @@ td svg {
     margin-right: 2vh;
 }
 
-.skill-bar {
-    width: 100%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    border-radius: 15px;
-    background-color: #ddd;
+.skills-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-item {
+    margin-top: 4vh;
 }
 
 .skills {
-    border-radius: 15px;
-    color: #f2f2f2;
-    padding: 1vh;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
 }
 
-.skill {
-    float: left;
+.skills-list {
+    list-style: none;
+    line-height: 4vh;
+    font-size: 2.5vh;
 }
 
-.cisco { width: 80%; background-color: #005165; }
-.aws { width: 80%; background-color: #ff9900; }
-.terraform { width: 75%; background-color: #5c41e2; }
-.django { width: 60%; background-color: #11553b; }
-.python { width: 60%; background-color: #f7ca3e; }
-.html { width: 50%; background-color: #dd4b25; }
-.css { width: 40%; background-color: #254bdd; }
-.react { width: 20%; background-color: #5ed3f3; }
-.js { width: 10%; background-color: #e8d44d; }
+.skills-list li::before {
+    content: "\2022"; 
+    color: #f3b70a;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
 
 /* --- Certs Page --- */
 .slideshow {
