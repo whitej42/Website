@@ -47,11 +47,14 @@ section .heading::before {
     font-weight: lighter;
 }
 
+.heading-center {
+    text-align: center;
+}
+
 /* Nav Bar Top */
 .header {
     display: flex;
     justify-content: center;
-    list-style-position: inside;
 }
 
 .nav-list {
@@ -202,18 +205,20 @@ td svg {
 }
 
 .company {
-    font-size: 3vh;
+    font-size: 28px;
     color: #8892b0;
 }
 
 /* --- Skills Page --- */
 .skills-grid {
     display: grid;
+    background-color: white;
     grid-template-columns: 50% 50%;
+    padding: 50px;
 }
 
-.grid-item {
-    margin-bottom: 4vh;
+.skills-grid-item {
+    margin: 4vh;
 }
 
 .skills {
@@ -224,6 +229,10 @@ td svg {
 .skills-list h3 {
     color: #64ffda;
     font-family: "Lucida Console";
+}
+
+.skills-list h3::before {
+    content: "> ";
 }
 
 .skills-list {
@@ -242,88 +251,21 @@ td svg {
 }
 
 /* --- Certs Page --- */
-.slideshow {
-    position: relative;
-    margin-right: 8vw;
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 25px 0;
 }
 
-.slide {
-    display: none;
-    margin-left: 4vw;
-    margin-right: 4vw;
+.grid-item {
+    margin: 25px;
     text-align: center;
 }
 
-.slide img {
+.grid-item img {
     width: 32vh;
     height: 32vh;
-}
-
-.fade {
-    animation: fadeIn 1.2s;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
-  }
-
-.slide-contents {
-    padding: 18px;
-    height: 100%;
-}
-
-.prev, .next {
-    opacity: 0.2;
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    transition: 150ms ease-in;
-}
-
-.slideshow svg {
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    margin: 0;
-}
-
-.next{ 
-    right: 0;
-}
-
-.credly {
-    text-align: center;
-}
-
-.credly a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #f2f2f2;
-    position: relative;
-    transition: 250ms ease-in;
-}
-
-.credly a:hover {
-    opacity: 0.5;
-}
-
-.credly a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: currentColor;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-in;
-}
-
-.credly a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 /* -- Contact Page -- */
@@ -345,9 +287,35 @@ td svg {
     padding-bottom: 18px;
 }
 
-#sites svg {
-    padding: 0 0.5vw 2vh 0;
-    vertical-align: middle;
-    width: 100px;
-    height: 100px;
+.links-bar :before {
+    content: '';
+    width: 2px;
+    height: 100vh;
+    background: #ccd6f6;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.links {
+    color: #8892b0;
+    text-align: center;
+    list-style: none;
+    margin-left: 50px;
+    position: fixed;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.links svg {
+    color: #8892b0;
+    padding-bottom: 25px;
+    width: 100%;
+    height: 100%;
+    transition: ease-in 200ms;
+}
+
+.links svg:hover {
+    color: #64ffda;
 }
