@@ -2,23 +2,19 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="static/css/index.css">
-
-    <title>James White | Cloud Specialist</title>
-
-</head>
-
-<body>
-
-    <main>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="static/css/index.css">
+    <meta name="description" content="James White is a junior DevOps engineer who specializes in Amazon Web Services and Infrastructure as Code.">
+    <meta property="og:description" content="James White is a junior DevOps engineer who specializes in Amazon Web Services and Infrastructure as Code.">
+    <meta property="og:image" content="static/img/preview-img.png">
+    <meta property="og:title" content="James White | DevOps Engineer">
     <title>James White | DevOps Engineer</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
 </head>
 <body>
     <main>
@@ -26,7 +22,7 @@
         <div class="links-bar">
                 <ul class=links>
                     <li>
-                        <a href="https://www.linkedin.com/in/jamesw-white/" target="_blank">
+                        <a title="LinkedIn" class="link" href="https://github.com/ClassicSmej" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
                                 class="bi bi-linkedin" viewBox="0 0 16 16">
                                 <path
@@ -35,13 +31,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/ClassicSmej" target="_blank">
+                        <a title="GitHub" class="link" href="https://github.com/ClassicSmej" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
                                 class="bi bi-github" viewBox="0 0 16 16">
                                 <path
                                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                             </svg>
-                        </a>
+                        </a> 
                     </li>
                 </ul>
             </div>
@@ -56,7 +52,6 @@
                             <li><a class="nav-item" href="#work">Experience</a></li>
                             <li><a class="nav-item" href="#skills">Skills</a></li>
                             <li><a class="nav-item" href="#certs">Certifications</a></li>
-                            <li><a class="nav-item" href="#contact">Contact</a></li>
                         </ol>
                     </div>
                 </nav>
@@ -72,7 +67,7 @@
                         Currently focusing on web development using React and serverless architectures with AWS.
                         Please feel free to take a look at my <a id="git" href="https://github.com/ClassicSmej" target="_blank">GitHub</a>.
                     </p>
-                    <a class="btn-down" href="#about">Learn More!</a>
+                    <a class="btn-down" href="/static/files/James-White-CV.pdf" target="_blank">Download CV!</a>
                 </div>
             </div>
         </section>
@@ -156,76 +151,60 @@
             </div>
         </section>
 
-        <section>
+        <section id="skills" data-label="skills">
             <div class="section-text">
                 <h2 class="heading">Skills</h2>
                 <div class="skills-container">
                     <div class="skills-grid">
                         <div class="skills-grid-item">
-                            das
+                            <div class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentcolor" class="bi bi-cloud" viewBox="0 0 16 16">
+                                    <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+                                </svg>
+                                <h1 class="skill-heading">Cloud</h1>
+                                <p>
+                                    Two years experience working with Cloud technologies and services including Amazon Web Services, Azure and GCP.
+                                    Passionate about improving automation of application deployment and management in the Cloud using Infrastructure as Code and DevOps tools.
+                                </p>
+                            </div>
                         </div>
                         <div class="skills-grid-item">
-                            dsa
+                            <div class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentcolor" class="bi bi-window-stack" viewBox="0 0 16 16">
+                                    <path d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                                    <path d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10ZM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1Zm1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8H3Zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2h12Z"/>
+                                </svg>
+                                <h1 class="skill-heading">Web Development</h1>
+                                <p>
+                                    Enjoy developing web applications in my spare time including various iterations of this website and other projects for clients.
+                                    Experience creating and designing both static and dynamic sites with HTML, CSS, JavaScript and Django.
+                                </p>
+                            </div>
                         </div>
                         <div class="skills-grid-item">
-                            dsa
+                            <div class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentcolor" class="bi bi-terminal" viewBox="0 0 16 16">
+                                    <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+                                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+                                </svg>
+                                <h1 class="skill-heading">Programming</h1>
+                                <p>
+                                    Strong knowledge of programming concepts and practices in a variety of different languages. Most noteably Python and JavaScript with some knowledge of C# and Java.
+                                    Developed multiple personal projects using Python including web development with Django and software defined networking.
+                                </p>
+                            </div>
                         </div>
                         <div class="skills-grid-item">
-                            dsa
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" data-label="Skills">
-            <div class="section-text">
-                <h2 class="heading">Skills</h2>
-                <div class="skills-container">
-                    <div class="skills-grid">
-                        <div class="skills-grid-item">
-                            <ul class="skills-list">
-                                <h3>Soft Skills</h3>
-                                <li>Self-motivated</li>
-                                <li>Problem-solving</li>
-                                <li>Time management</li>
-                                <li>Communiation</li>
-                                <li>Teamwork</li>
-                                <li>Leadership</li>
-                                <li>Willingness to learn</li>
-                            </ul>
-                        </div>
-                        <div class="skills-grid-item">
-                            <ul class="skills-list">
-                                <h3>Programming & Development</h3>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-                                <li>Django</li>
-                                <li>React</li>
-                                <li>Docker</li>
-                            </ul>
-                        </div>
-                        <div class="skills-grid-item">
-                            <ul class="skills-list">
-                                <h3>Cloud Computing</h3>
-                                <li>Amazon Web Services</li>
-                                <li>Microsoft Azure</li>
-                                <li>Google Cloud Platform</li>
-                                <li>Terraform</li>
-                                <li>CloudFormation</li>
-                            </ul>
-                        </div>
-                        <div class="skills-grid-item">
-                            <ul class="skills-list">
-                                <h3>Server Administation</h3>
-                                <li>Linux</li>
-                                <li>Windows Server</li>
-                                <li>Ansible</li>
-                                <li>Puppet</li>
-                                <li>Chef</li>
-                            </ul>
+                            <div class="skill">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentcolor" class="bi bi-infinity" viewBox="0 0 16 16">
+                                    <path d="M5.68 5.792 7.345 7.75 5.681 9.708a2.75 2.75 0 1 1 0-3.916ZM8 6.978 6.416 5.113l-.014-.015a3.75 3.75 0 1 0 0 5.304l.014-.015L8 8.522l1.584 1.865.014.015a3.75 3.75 0 1 0 0-5.304l-.014.015L8 6.978Zm.656.772 1.663-1.958a2.75 2.75 0 1 1 0 3.916L8.656 7.75Z"/>
+                                  </svg>
+                                <h1 class="skill-heading">DevOps</h1>
+                                <p>
+                                    Experience working in a DevOps environment using a range of tools related to configuration management, server administration, infrastructure as code and
+                                    continuous integration and deployment (CI/CD). These include Docker, Terraform, Ansible, Puppet, Chef, Git and Jenkins.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -252,14 +231,14 @@
             </div>
         </section>
 
-
-        <section id="contact" data-label="Contact">
-            <div class="section-text">
-                <h2 class="heading">Contact</h2>
-                
-            </div>
-        </section>
+        <footer class="footer">
+            Built by James White<br><br>
+            Powered by
+            <a href="https://aws.amazon.com/">
+                <img class=aws src="/static/img/aws-logo.png">
+            </a>
+        </footer>
     </main>
-    <script src="static/js/slideshow.js" type="text/javascript" lang="javascript"></script>
+    <script src="static/js/contact.js" type="text/javascript" lang="javascript"></script>
 </body>
 </html>
