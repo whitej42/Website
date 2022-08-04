@@ -1,0 +1,394 @@
+/* -- Global -- */
+html, main, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    counter-reset: section;
+    font-family: "Lucida Console", Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- Sections -- */
+section {
+    height: 100%;
+    overflow: hidden;
+    color: #636669;
+    background-color: #0a192f;
+}
+
+.section-text {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+section .heading {
+    margin: 20px 0;
+    font-family: Arial;
+    font-size: 32px;
+    color: #abc5ed;
+}
+
+section .heading::before {
+    counter-increment: section;
+    content: "0" counter(section) ".";
+    color: #f3b70a;
+    font-family: "Lucida Console";
+    padding-right: 10px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.heading-center {
+    text-align: center;
+}
+
+/* -- Links Bar -- */
+.links-bar :before {
+    content: '';
+    width: 2px;
+    height: 100vh;
+    background: #636669;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.links {
+    color: #636669;
+    list-style: none;
+    margin-left: 50px;
+    position: fixed;
+    top: 80%;
+    transform: translateY(-50%);
+}
+
+.link {
+    color: #636669;
+    text-decoration: none;
+}
+
+.link svg {
+    margin-bottom: 25px;
+    transition: ease-in 200ms;
+}
+
+.link:hover svg {
+    color: #f3b70a;
+    transform: translateY(-5px);
+}
+
+
+/* -- Nav Bar Top -- */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    counter-reset: nav-item;
+    padding: 40px;
+    font-size: 16px;
+}
+
+.nav-list li::before {
+    counter-increment: nav-item;
+    content: "0" counter(nav-item) ".";
+    padding: 10px;
+    color: #f3b70a;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #abc5ed;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #f3b70a;
+    transition: ease-in 200ms;
+}
+
+/* -- Home Section -- */
+#home .section-text {
+    height: 80%;
+}
+
+.intro {
+    color: #636669;
+    font-size: 50px;
+    font-family: Arial;
+    text-align: left;
+}
+
+.intro * {
+    margin: 5px 0;
+}
+
+.intro h1 {
+    margin: 5px;
+    font-family: "Lucida Console";
+    font-size: 18px;
+    font-weight: lighter;
+    color: #f3b70a;
+}
+
+.intro h2 {
+    color: #abc5ed;
+}
+
+.intro p {
+    margin: 20px 0 40px 0;
+    font-size: 18px;
+    max-width: 60%;
+}
+
+#git {
+    text-decoration: none;
+    color: #f3b70a;
+}
+
+.btn-down {
+    z-index: 1;
+    position: relative;
+    width: max-content;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-family: "Lucida Console";
+    font-size: 16px;
+    color: #f3b70a;
+    border: solid 1px #f3b70a;
+    border-radius: 4px;
+}
+
+.btn-down::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(243, 183, 10, 0.2);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.btn-down:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* -- About Page -- */
+#about-text {
+    width: 50%;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#introduction {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #f3b70a;
+}
+
+/* --- Work Page --- */
+table {
+    border-collapse: collapse;
+    font-size: 32px;
+    margin: 25px 0;
+}
+
+td {
+    padding: 25px;
+}
+
+td svg {
+    vertical-align: middle;
+    padding-left: 2px;
+    width: 32px;
+    height: 32px;
+}
+
+.td-left {
+    border-right: #636669 solid 2px;
+    font-weight: bold;
+    color: #f3b70a;
+    padding-left: 0px;
+}
+
+.td-right {
+    color: #abc5ed;
+    font-family: Arial;
+}
+
+.company {
+    font-size: 28px;
+    color: #636669;
+}
+
+/* --- Skills Page --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.skill {
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+    padding: 25px;
+    background-color: white;
+    font-family: Arial;
+}
+
+.skill::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #f3b70a;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 250ms;
+}
+
+.skill:hover::after {
+    transform: scaleY(1);
+    transform-origin: bottom; 
+}
+
+.skill svg {
+    color: #f3b70a;
+    transition: 300ms;
+}
+
+.skill:hover svg {
+    color: #636669;
+}
+
+.skill-heading {
+    margin: 5px 0;
+}
+
+.skill p {
+    font-size: 20px;
+}
+
+/* --- Certs Page --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.grid-item {
+    margin: 25px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 32vh;
+    height: 32vh;
+}
+
+/* -- Contact Page -- */
+.contact-info {
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+
+#contact-form textarea {
+    font-family: Arial;
+    height: 100px;
+    width: 80%;
+}
+
+#contact-form h4 {
+    margin: 10px 0;
+    font-family: Arial;
+}
+
+.contact-input {
+    height: 50px;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: Arial;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0a192f;
+    border: 1px solid #636669;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.btn-submit {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    font-family: "Lucida Console";
+    font-size: 16px;
+    background-color: #0a192f;
+    color: #f3b70a;
+    border: solid 1px #f3b70a;
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+.btn-submit::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(100,255,218, 0.2);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.btn-submit:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.footer {
+    background-color: #0a192f;
+    padding: 50px;
+    text-align: center;
+    color: #636669;
+}
+
+.aws {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 18px;
+    vertical-align: middle;
+}
