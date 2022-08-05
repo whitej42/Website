@@ -4,7 +4,7 @@ Personal website I have developed using Django. Current released version is enti
 
 **Link:** [jwhite42.com](http://jwhite42.com)
 
-![Website Preview]()
+![Website Preview](https://github.com/ClassicSmej/Website/blob/main/Website/static/img/preview.png)
 
 ## Current V3:
 Redesigned from previous version to make it look more professional (and I didn't really like it). Design inpsired by [Brittany Chiang](https://brittanychiang.com).
