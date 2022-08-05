@@ -17,7 +17,7 @@ html, main, body {
 section {
     height: 100%;
     overflow: hidden;
-    color: #8D8D92;
+    color: #8892b0;
     background-color: #0a192f;
 }
 
@@ -34,7 +34,7 @@ section .heading {
     margin: 20px 0;
     font-family: Arial;
     font-size: 32px;
-    color: #D7D6D6;
+    color: #ccd6f6;
 }
 
 section .heading::before {
@@ -61,7 +61,7 @@ section .heading::before {
     content: '';
     width: 2px;
     height: 100vh;
-    background: #8D8D92;
+    background: #8892b0;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -69,7 +69,7 @@ section .heading::before {
 }
 
 .links {
-    color: #8D8D92;
+    color: #8892b0;
     list-style: none;
     margin-left: 50px;
     position: fixed;
@@ -78,7 +78,7 @@ section .heading::before {
 }
 
 .link {
-    color: #8D8D92;
+    color: #8892b0;
     text-decoration: none;
 }
 
@@ -120,7 +120,7 @@ section .heading::before {
 
 .nav-item {
     text-decoration: none;
-    color: #D7D6D6;
+    color: #ccd6f6;
     position: relative;
 }
 
@@ -135,7 +135,7 @@ section .heading::before {
 }
 
 .intro {
-    color: #8D8D92;
+    color: #8892b0;
     font-size: 50px;
     font-family: Arial;
     text-align: left;
@@ -154,7 +154,7 @@ section .heading::before {
 }
 
 .intro h2 {
-    color: #D7D6D6;
+    color: #ccd6f6;
 }
 
 .intro p {
@@ -184,7 +184,7 @@ section .heading::before {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(100,255,218, 0.2);
+    background-color: rgba(100, 255, 218, 0.2);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
@@ -221,6 +221,7 @@ section .heading::before {
     height: 300px;
     width: 300px;
     border-radius: 4px;
+    opacity: 0.8;
 }
 
 /* --- Work Page --- */
@@ -242,20 +243,20 @@ td svg {
 }
 
 .td-left {
-    border-right: #8D8D92 solid 2px;
+    border-right: #8892b0 solid 2px;
     font-weight: bold;
     color: #64ffda;
     padding-left: 0px;
 }
 
 .td-right {
-    color: #D7D6D6;
+    color: #ccd6f6;
     font-family: Arial;
 }
 
 .company {
     font-size: 28px;
-    color: #8D8D92;
+    color: #8892b0;
 }
 
 /* --- Skills Page --- */
@@ -272,10 +273,6 @@ td svg {
     background-color: white;
     font-family: Arial;
     transition: 300ms;
-}
-
-.skill:hover {
-    color: #0a192f;
 }
 
 .skill::after {
@@ -300,6 +297,10 @@ td svg {
 .skill svg {
     color: #64ffda;
     transition: 300ms;
+}
+
+.skill:hover svg {
+    color: #8892b0;
 }
 
 .skill-heading {
@@ -354,7 +355,7 @@ td svg {
     font-size: 18px;
     color: #fff;
     background-color: #0a192f;
-    border: 1px solid #8D8D92;
+    border: 1px solid #8892b0;
     border-radius: 5px;
     opacity: 0.8;
 }
@@ -380,7 +381,7 @@ td svg {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(239,35,60, 0.2);
+    background-color: rgba(243, 183, 10, 0.2);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
@@ -395,7 +396,7 @@ td svg {
     background-color: #0a192f;
     padding: 50px;
     text-align: center;
-    color: #8D8D92;
+    color: #8892b0;
 }
 
 .aws {
