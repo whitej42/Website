@@ -51,6 +51,11 @@ section .heading::before {
     text-align: center;
 }
 
+.highlight {
+    color: #64ffda;
+    text-decoration: none;
+}
+
 /* -- Links Bar -- */
 .links-bar :before {
     content: '';
@@ -97,7 +102,7 @@ section .heading::before {
 .nav-list {
     counter-reset: nav-item;
     padding: 40px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .nav-list li::before {
@@ -158,11 +163,6 @@ section .heading::before {
     max-width: 60%;
 }
 
-#git {
-    text-decoration: none;
-    color: #64ffda;
-}
-
 .btn-down {
     z-index: 1;
     position: relative;
@@ -184,7 +184,7 @@ section .heading::before {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(100,255,218, 0.2);
+    background-color: rgba(100, 255, 218, 0.2);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
@@ -196,6 +196,12 @@ section .heading::before {
 }
 
 /* -- About Page -- */
+#about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 #about-text {
     width: 50%;
     font-size: 20px;
@@ -207,8 +213,15 @@ section .heading::before {
     font-weight: bold;
 }
 
-.highlight {
-    color: #64ffda;
+#about-pic {
+    margin: 0 auto;
+}
+
+#profile-pic {
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    opacity: 0.8;
 }
 
 /* --- Work Page --- */
@@ -259,6 +272,7 @@ td svg {
     padding: 25px;
     background-color: white;
     font-family: Arial;
+    transition: 300ms;
 }
 
 .skill::after {
@@ -315,7 +329,7 @@ td svg {
     height: 32vh;
 }
 
-/* -- Contact Page -- */
+/* -- Contact Page FUTURE -- */
 .contact-info {
     font-family: Arial;
     margin-bottom: 20px;
@@ -367,7 +381,7 @@ td svg {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: rgba(100,255,218, 0.2);
+    background-color: rgba(243, 183, 10, 0.2);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
