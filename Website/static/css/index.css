@@ -116,7 +116,6 @@ section .heading::before {
     transform: translateY(-5px);
 }
 
-
 /* -- Nav Bar Top -- */
 .header {
     display: flex;
@@ -187,7 +186,7 @@ section .heading::before {
     max-width: 60%;
 }
 
-.btn-down {
+.btn-cv {
     z-index: 1;
     position: relative;
     width: max-content;
@@ -200,7 +199,7 @@ section .heading::before {
     border-radius: 4px;
 }
 
-.btn-down::after {
+.btn-cv::after {
     content: '';
     position: absolute;
     height: 100%;
@@ -214,7 +213,7 @@ section .heading::before {
     transition: transform 250ms ease-in;
 }
 
-.btn-down:hover::after {
+.btn-cv:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
