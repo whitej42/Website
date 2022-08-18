@@ -1,0 +1,82 @@
+/* Error Stylesheet */
+
+/* -- Global -- */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lucida Console", Arial;
+    overflow: hidden;
+    height: 100%;
+    background-color: #0a192f;
+    color: #8892b0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+p {
+    margin: 2vh;
+}
+
+.text-large {
+    font-size: 100px;
+    color: #ccd6f6;
+    font-weight: bold;
+}
+
+.text-small {
+    font-size: 48px;
+    font-family: Arial;
+}
+
+svg {
+    padding: 0 0.5vw 2vh 0;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
+.redirect {
+    position: relative;
+    font-size: 32px;
+    color: #64ffda;
+    text-decoration: none;
+    transition: 250ms ease-in;
+}
+
+.redirect:hover {
+    opacity: 0.5;
+}
+
+.redirect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.redirect:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.redirect svg {
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
