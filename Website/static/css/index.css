@@ -346,13 +346,21 @@ td svg {
 }
 
 .tech-item img {
-    width: 80px;
-    height: 70px;
-    transition: ease-in 200ms;
+    width: 100px;
+    height: 90px;
+    transition: ease-in 250ms;
 }
 
 .tech-item img:hover {
     transform: translateY(-20%);
+}
+
+.hide {
+    display: none;
+}
+
+.tech-item img:hover + .hide {
+    display: block;
 }
 
 /* --- Certs Page --- */
