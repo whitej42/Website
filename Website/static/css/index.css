@@ -334,6 +334,27 @@ td svg {
     font-size: 20px;
 }
 
+/* --- Technologies Page --- */
+.tech-grid {
+    display: grid;
+    grid-template: 200px 200px 200px / auto auto auto auto auto;
+    margin-top: 50px;
+}
+
+.tech-item {
+    text-align: center;
+}
+
+.tech-item img {
+    width: 80px;
+    height: 70px;
+    transition: ease-in 200ms;
+}
+
+.tech-item img:hover {
+    transform: translateY(-20%);
+}
+
 /* --- Certs Page --- */
 .grid-container {
     display: grid;
@@ -348,8 +369,8 @@ td svg {
 }
 
 .grid-item img {
-    width: 32vh;
-    height: 32vh;
+    width: 28vh;
+    height: 28vh;
 }
 
 /* -- Projects Page -- */
@@ -390,7 +411,6 @@ td svg {
 }
 
 .project-description {
-
     font-family: Arial;
 }
 
@@ -481,6 +501,7 @@ td svg {
     transform-origin: left;
 }
 
+/* --- Footer --- */
 .footer {
     background-color: #0a192f;
     padding: 50px;
