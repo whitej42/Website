@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="James White is a systems engineer who specializes in DevOps, Amazon Web Services and Infrastructure as Code.">
     <meta property="og:description" content="James White is a systems engineer who specializes in DevOps, Amazon Web Services and Infrastructure as Code.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/ClassicSmej/Website/main/Website/static/img/preview.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/whitej42/Website/main/Website/static/img/preview.png">
     <meta property="og:title" content="James White | DevOps Engineer">
     <meta property="og:url" content="https://jwhite42.com">
     <title>James White | DevOps Engineer</title>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a title="GitHub" class="link" href="https://github.com/whitej42" target="_blank">
+                        <a title="GitHub" class="link" href="https://github.com/whitej42" target="0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                                 class="bi bi-github" viewBox="0 0 16 16">
                                 <path
@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <section id="home" data-label="Home">
+        <section class="section" id="home" data-label="Home">
             <header class="header">
                 <nav class="navbar">
                     <div class="nav-links">
@@ -59,6 +59,7 @@
                             <li><a class="nav-item" href="#work">Experience</a></li>
                             <li><a class="nav-item" href="#skills">Skills</a></li>
                             <li><a class="nav-item" href="#certs">Certifications</a></li>
+                            <li><a class="nav-item" href="#projects">Projects</a></li>
                         </ol>
                     </div>
                 </nav>
@@ -72,14 +73,14 @@
                     <p>
                         I'm a systems engineer specializing in DevOps, Amazon Web Services and Infrastructure as Code.
                         Currently focusing on web development using React and serverless architectures with AWS.
-                        Please feel free to take a look at my <a class="highlight underline" href="https://github.com/whitej42" target="_blank">GitHub</a>.
+                        Please feel free to take a look at my <a class="highlight underline" href="https://github.com/whitej42" target="0">GitHub</a>.
                     </p>
                     <a class="btn-cv" href="static/files/James-White-CV.pdf" target="_blank">Download CV!</a>
                 </div>
             </div>
         </section>
 
-        <section id="about" data-label="About">
+        <section class="section" id="about" data-label="About">
             <div class="section-text">
                 <h2 class="heading">About</h2>
                 <div id="about-container">
@@ -98,7 +99,7 @@
             </div>
         </section>
 
-        <section id="work" data-label="Work">
+        <section class="section" id="work" data-label="Work">
             <div class="section-text">
                 <h2 class="heading">Experience</h2>
                 <div id="career">
@@ -160,7 +161,7 @@
             </div>
         </section>
 
-        <section id="skills" data-label="skills">
+        <section class="section" id="skills" data-label="skills">
             <div class="section-text">
                 <h2 class="heading">Skills</h2>
                 <div class="skills-container">
@@ -186,7 +187,7 @@
                                 <h1 class="skill-heading">Web Development</h1>
                                 <p>
                                     I enjoy developing web applications in my spare time including various iterations of this website and other projects for clients.
-                                    Experience creating and designing both static and dynamic sites with HTML, CSS, JavaScript and Django.
+                                    Experience creating and designing both static and dynamic sites with HTML, CSS, JavaScript, React and Django.
                                 </p>
                             </div>
                         </div>
@@ -211,7 +212,7 @@
                                 <h1 class="skill-heading">DevOps</h1>
                                 <p>
                                     Experience working in a DevOps environment using a range of tools related to configuration management, server administration, infrastructure as code and
-                                    continuous integration and deployment (CI/CD) pipelines. These include Terraform, Ansible, Vault, Kubernetes and GitLab.
+                                    continuous integration and deployment (CI/CD) pipelines. These include Terraform, Ansible, Vault, Kubernetes, GitHub and Gitlab.
                                 </p>
                             </div>
                         </div>
@@ -220,7 +221,7 @@
             </div>
         </section>
 
-        <section id="certs" data-label="Certifications">
+        <section class="section" id="certs" data-label="Certifications">
             <div class="section-text">
                 <h2 class="heading heading-center">Certifications</h2>
                 <div class="grid-container">
@@ -240,8 +241,195 @@
             </div>
         </section>
 
+        <section id="projects" data-label="Projects">
+            <div class="section-text">
+                <h2 class="heading">Projects</h2>
+                <h3>List of personal projects I have developed over the years......</h3>
+                <ul class="project-list">
+                    <!-- NetManager -->
+                    <li>
+                        <div class="project-content" style="border-top: 2px solid">
+                            <div class="project-image">
+                                <a><img src="static/img/netmanager.png"></a>
+                            </div>
+                            <div class="project-text">
+                                <div class="project-name">NetManager</div>
+                                <div class="project-description">
+                                    NetManager is a network configuration & management (NCM) tool for automated configuration and monitoring of network devices. 
+                                    Built using the <label class="highlight">Django Web Framework</label>, NetManager provides a clean and easy to use web interface that interacts with network devices 
+                                    to retrieve information and push configuration changes by utilising the <label class="highlight">Netmiko</label> Python library.
+                                </div>
+                                <div class="project-tags">
+                                    <ul class="tags-list">
+                                        <li class="tag">
+                                            Django
+                                        </li>
+                                        <li class="tag">
+                                            Python
+                                        </li>
+                                        <li class="tag">
+                                            HTML
+                                        </li>
+                                        <li class="tag">
+                                            CSS
+                                        </li>
+                                        <li class="tag">
+                                            Networking
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a title="YouTube" class="repo-link" href="https://www.youtube.com/watch?v=xxV7JNZJYpQ" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                      </svg>
+                                </a> 
+                                <a title="GitHub" class="repo-link" href="https://github.com/whitej42/NetManager" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Portfolio Website -->
+                    <li>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <a><img src="static/img/jwhite42.png"></a>
+                            </div>
+                            <div class="project-text">
+                                <div class="project-name">Personal Website</div>
+                                <div class="project-description">
+                                    I originally began creating this website to enhance my web development skills and learn new techniques, languages and 
+                                    frameworks. Now it is my primary platform for showcasing my experience and skill set as well as looking much cooler than a CV! 
+                                    <br><br>
+                                    I have created several iterations of this site using a number of different approaches to web development including <label class="highlight">Django</label>, 
+                                    <label class="highlight">React</label> and <label class="highlight">Vue.js</label> learning and developing invaluable skills on the way. This version was developed 
+                                    statically using just <label class="highlight">HTML</label> and <label class="highlight">CSS</label> to take advantage of AWS static website hosting removing the need for a hosted server.
+                                </div>
+                                <div class="project-tags">
+                                    <ul class="tags-list">
+                                        <li class="tag">
+                                            Django
+                                        </li>
+                                        <li class="tag">
+                                            HTML
+                                        </li>
+                                        <li class="tag">
+                                            CSS
+                                        </li>
+                                        <li class="tag">
+                                            JavaScript
+                                        </li>
+                                        <li class="tag">
+                                            AWS
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a title="GitHub" class="repo-link" href="https://github.com/whitej42/Website" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a> 
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Gorstella -->
+                    <li>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <a><img src="static/img/gorstella.png"></a>
+                            </div>
+                            <div class="project-text">
+                                <div class="project-name">Gorstella Gallery</div>
+                                <div class="project-description">
+                                    <a href="http://www.gorstellagallery.co.uk/" class="highlight underline" target="_blank">Gorstella Gallery</a> is an 
+                                    independent gallery based in Chester, United Kingdom. I have been working on a complete overhaul of their site, focusing on 
+                                    updating the layout and design to give it a more modern look and feel using <label class="highlight">React</label>. I am also developing a solution to improve overall management 
+                                    of the site making the release of new content easier. The infrastructure is also being rebuilt and migrated over to AWS.
+                                </div>
+                                <div class="project-tags">
+                                    <ul class="tags-list">
+                                        <li class="tag">
+                                            React
+                                        </li>
+                                        <li class="tag">
+                                            HTML
+                                        </li>
+                                        <li class="tag">
+                                            CSS
+                                        </li>
+                                        <li class="tag">
+                                            JavaScript
+                                        </li>
+                                        <li class="tag">
+                                            AWS
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a title="GitHub" class="repo-link" href="https://github.com/whitej42/Gorstella-Gallery" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a> 
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Terraform -->
+                    <li>
+                        <div class="project-content">
+                            <div class="project-image">
+                                <a><img src="static/img/tf-pipelines.png"></a>
+                            </div>
+                            <div class="project-text">
+                                <div class="project-name">Terraform Projects</div>
+                                <div class="project-description">
+                                    My experience working in DevOps has prompted me to automate much of my AWS infrastructure through <label class="highlight">Terraform</label>
+                                    and <label class="highlight">CI/CD</label> pipelines using <label class="highlight">GitHub Actions</label>. I have developed Terraform templates and modules to improve future developments
+                                    of my infrastructure in the future. Most of these repositories are private for security reasons but feel free to take a look at my Terraform template.
+                                    I am currently working on a module to deploy a static website using <label class="highlight">S3</label>, <label class="highlight">CloudFront</label> and <label class="highlight">Route53</label>.
+                                </div>
+                                <div class="project-tags">
+                                    <ul class="tags-list">
+                                        <li class="tag">
+                                            Terraform
+                                        </li>
+                                        <li class="tag">
+                                            AWS
+                                        </li>
+                                        <li class="tag">
+                                            GitHub Actions
+                                        </li>
+                                        <li class="tag">
+                                            CI/CD
+                                        </li>
+                                        <li class="tag">
+                                            DevOps
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a title="GitHub" class="repo-link" href="https://github.com/whitej42/TF-Base-Template" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                    </svg>
+                                </a> 
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <footer class="footer">
-            Built by <a class="highlight underline" href="https://github.com/whitej42" target="_blank">James White</a> |
+            Built by <a class="highlight underline" href="https://github.com/whitej42" target="0">James White</a> |
             Design Inspired by <a class="highlight underline" href="https://brittanychiang.com/" target="_blank">Brittany Chiang</a><br><br>
             Powered by
             <a href="https://aws.amazon.com/">
