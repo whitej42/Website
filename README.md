@@ -1,8 +1,6 @@
 # jwhite42.com
 
-Personal website I have developed using Django. Current released version is entirely static, pure HTML & CSS, for hosting purposes.
-
-**Link:** [jwhite42.com](http://jwhite42.com)
+Personal website I have developed using pure HTML & CSS. Have started redeveloping using Django & React.
 
 ![Website Preview](https://github.com/whitej42/Website/blob/main/Website/static/img/preview.png)
 
